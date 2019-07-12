@@ -1,0 +1,118 @@
+.info-box {
+  background-color: #fff3e4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 40%;
+  min-width: 370px;
+  max-width: 600px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.1), 0 2px 49px 0 rgba(0, 0, 0, 0.06);
+  padding: 10px 15px 18px 15px;
+}
+
+.info-box_padding-wrapper {
+  width: 100%;
+  padding-left: 30px;
+}
+
+.info-box__first-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 8px 0;
+}
+
+.info-box__first-row__city {
+  color: #666362;
+  margin: 0;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.info-box__first-row span.material-icons {
+  color: #fb8d3f;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.info-box__temperature {
+  color: #505050;
+  margin: 0;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.info-box__third-row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.info-box__third-row__first-group {
+  margin-right: 30px;
+}
+
+.info-box__third-row__first-group__min-max {
+  font-weight: bold;
+  color: #656261;
+}
+
+.info-box__third-row__first-group__min-max span.material-icons {
+  color: #fb8d3f;
+  vertical-align: text-bottom;
+  text-align: left;
+}
+
+.info-box__third-row__first-group__min-max__min {
+  margin-right: 10px;
+}
+
+.info-box__third-row__first-group__wind,
+.info-box__third-row__second-group__sensation,
+.info-box__third-row__second-group__humidity {
+  font-weight: 300;
+  color: #656261;
+}
+
+.info-box__hr {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #fcb045;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.info-box__future-days {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.info-box__future-days__day-box {
+  width: 60px;
+  text-align: center;
+}
+
+.info-box__future-days__day-box__title {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  color: #656261;
+  font-size: 1.1rem;
+}
+
+.info-box__future-days__day-box__min-max {
+  color: #fc873f;
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+}
+
+.info-box__future-days__day-box__min-max span.min {
+  margin-right: 5px;
+}

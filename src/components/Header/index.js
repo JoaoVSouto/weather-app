@@ -1,5 +1,11 @@
 import React from 'react';
 
-const Header = () => <header className="header">Previsão do tempo</header>;
+import './header.css';
+
+const Header = () => (
+  <header className="header">
+    <h1 className="header__title">Previsão do tempo</h1>
+  </header>
+);
 
 export default Header;

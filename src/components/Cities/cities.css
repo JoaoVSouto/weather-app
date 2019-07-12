@@ -1,0 +1,46 @@
+.cities {
+  margin-top: 40px;
+  border-top: 1px solid #fff;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cities__header {
+  align-self: flex-start;
+
+  color: #fff;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+
+  margin: 15px 30px;
+}
+
+.cities__info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+}
+
+.cities__info__capitals {
+  height: 40%;
+  border-spacing: 10px;
+}
+
+.cities__info__capitals .second {
+  text-align: right;
+}
+
+.cities__info__capitals thead tr th {
+  font-weight: 300;
+  text-align: left;
+}
+
+.cities__info__capitals tbody tr td {
+  font-weight: bold;
+}

@@ -5,6 +5,8 @@ import InfoBox from '../components/InfoBox';
 import SearchBox from '../components/SearchBox';
 import Cities from '../components/Cities';
 
+import './App.css';
+
 function App() {
   return (
     <div className="app">
