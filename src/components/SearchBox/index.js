@@ -19,6 +19,8 @@ export default class SearchBox extends Component {
   onFormSubmit = async e => {
     e.preventDefault();
     this.setState({ city: '' });
+    this.props.openInfoBox(false);
+    this.props.openLoading(true);
     try {
       const resp = await callApi(this.state.city);
       const { current_observation, forecasts, location } = resp.data;
@@ -62,6 +64,7 @@ export default class SearchBox extends Component {
         ]
       };
       this.props.updateBoxCityInfo(info);
+      this.props.openLoading(false);
       this.props.openInfoBox(true);
     } catch (e) {
       console.log(e);

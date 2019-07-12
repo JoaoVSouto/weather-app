@@ -6,12 +6,14 @@ import Header from '../components/Header';
 import InfoBox from '../components/InfoBox';
 import SearchBox from '../components/SearchBox';
 import Cities from '../components/Cities';
+import Loading from '../components/Loading';
 
 import './App.css';
 
 export default class App extends Component {
   state = {
     infoBoxOpen: false,
+    loadingOpen: false,
     boxCityInfo: {},
     capitalsInfo: null
   };
@@ -44,9 +46,11 @@ export default class App extends Component {
   }
 
   openInfoBox = state => {
-    this.setState({
-      infoBoxOpen: state
-    });
+    this.setState({ infoBoxOpen: state });
+  };
+
+  openLoading = state => {
+    this.setState({ loadingOpen: state });
   };
 
   updateBoxCityInfo = info => {
@@ -54,10 +58,11 @@ export default class App extends Component {
   };
 
   render() {
-    const { infoBoxOpen, boxCityInfo, capitalsInfo } = this.state;
+    const { infoBoxOpen, boxCityInfo, capitalsInfo, loadingOpen } = this.state;
     return (
       <div className="app">
         <Header />
+        <Loading loadingOpen={loadingOpen} />
         <InfoBox
           infoBoxState={infoBoxOpen}
           openInfoBox={this.openInfoBox}
@@ -65,6 +70,7 @@ export default class App extends Component {
         />
         <SearchBox
           openInfoBox={this.openInfoBox}
+          openLoading={this.openLoading}
           updateBoxCityInfo={this.updateBoxCityInfo}
         />
         <Cities capitalsInfo={capitalsInfo} />
