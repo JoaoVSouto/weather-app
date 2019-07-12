@@ -61,7 +61,7 @@ export default class SearchBox extends Component {
           }
         ]
       };
-      this.props.updateMainInfo(info);
+      this.props.updateBoxCityInfo(info);
       this.props.openInfoBox(true);
     } catch (e) {
       console.log(e);

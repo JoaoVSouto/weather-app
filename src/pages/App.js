@@ -65,7 +65,7 @@ export default class App extends Component {
         />
         <SearchBox
           openInfoBox={this.openInfoBox}
-          updateMainInfo={this.updateMainInfo}
+          updateBoxCityInfo={this.updateBoxCityInfo}
         />
         <Cities capitalsInfo={capitalsInfo} />
       </div>
