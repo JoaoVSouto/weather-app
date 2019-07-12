@@ -1,5 +1,6 @@
 .cities {
   margin-top: 40px;
+  margin-bottom: 10px;
   border-top: 1px solid #fff;
   width: 50%;
   height: 100%;
@@ -30,10 +31,6 @@
 .cities__info__capitals {
   height: 40%;
   border-spacing: 10px;
-}
-
-.cities__info__capitals .second {
-  text-align: right;
 }
 
 .cities__info__capitals thead tr th {
